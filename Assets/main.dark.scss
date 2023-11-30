@@ -1,0 +1,42 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@use "minima" with (
+
+	
+
+
+$red        : hsl(345,75%,50%)   ,
+$orange     : hsl(39,75%,50%) , //unused
+$yellow     : hsl(60,75%,50%)  , //unused
+$green      : hsl(135,75%,30%)  ,
+$teal       : hsl(180,75%,50%)  ,
+$blue       : hsl(214,75%,50%) ,
+$violet     : hsl(315,75%,30%)  ,
+//these are inverted
+$black      : hsl(0,0%,95%), 
+$dark-grey  : hsl(0,0%,66%) ,
+$grey       : hsl(0,0%,50%) , 
+$light-grey : hsl(0,0%,33%) ,
+$white      : hsl(0,0%,3%),
+
+$brand-color:  hsl(214,100%,60%)    ,
+$code-bg-color: hsl(60, 100%, 3%) , 
+$background-color: #000,
+);
+// $code-bg-color:    #eef ;
+// $red        : #d14     ;
+// $orange     : orange  ; //unused
+// $yellow     : yellow  ; //unused
+// $green      : #009926   ;
+// $teal       : #008080  ;
+// $blue       : #0086B3   ;
+// $violet     : #990073  ;
+
+
+// $black      : #111 ; 
+// $dark-grey  : #555 ; 
+// $grey       : #828282 ; 
+// $light-grey : #aaa ; 
+// $white      : #fdfdfd ; 

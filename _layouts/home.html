@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  <span class="post-content">
+  {{ content }}</span>
+
+  {%- if site.projects.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Projects" }}</h2>
+    <hr>
+    <ul class="post-list">
+      {%- for post in site.projects -%}
+      <li>
+        <div class="container">
+<!-- Left side -->
+          <div class=" showcase F2">
+            <img class=" A7 " src="/Assets/Profile Picture.png" alt="">
+          </div>
+<!-- Right Side -->
+          <div class="showcase F3">
+            <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span> -->
+            <a class="post-link" href="{{ post.url | relative_url }}">
+            <h2>{{ post.title | escape }}</h2>
+            </a>
+            <span class="post-content">
+              {{post.content}}
+            </span>
+          </div>
+        </div>
+      </li>
+      {%- endfor -%}
+      {%- endif -%}
+
+      {%- if site.posts.size > 0 -%}
+      {%- for post in site.posts -%}
+      <h2 class="post-list-heading">{{ page.list_title | default: "Blog Posts" }}</h2>
+      <hr>
+      <ul class="post-list">
+      <li>
+        <div class="container">
+<!-- Left side -->
+          <div class=" showcase F2">
+            <img class=" A7 " src="/Assets/Profile Picture.png" alt="">
+          </div>
+<!-- Right Side -->
+          <div class="showcase F3">
+            <a class="post-link" href="{{ post.url | relative_url }}"><h2>{{ post.title | escape }}</h2></a>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <span class="post-content">
+              {{post.content}}
+            </span>
+          </div>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+
+  {%- endif -%}
+
+</div>

@@ -1,0 +1,52 @@
+.paper{
+	/* A Centered A4 Page */
+	/* Makes the body act like a paper*/
+	margin: auto;
+	width: min(100% , 210mm);
+	height: max-content;
+	/* height: 297mm ; */
+}
+.A6{
+	width: min(100%, 105mm); /* Set the desired width */
+	height: auto; /* Maintain aspect ratio */
+}
+.A7{
+	width: min(100%, 74mm); /* Set the desired width */
+	height: auto; /* Maintain aspect ratio */
+}
+.A8{
+	width:  52mm; /* Set the desired width */
+	height: auto; /* Maintain aspect ratio */
+}
+.A9{
+	width: 37mm; /* Set the desired width */
+	height: auto; /* Maintain aspect ratio */
+}
+.container{
+	display: flex;
+	/* Vertical | */
+	align-items: space-between;   
+	/* Horizontal _ */
+	justify-items: space-between;
+}
+.socialContainer{
+	display: flex;
+	flex-wrap: wrap;
+	/* Vertical | */
+	align-content: space-between;   
+	/* Horizontal _ */
+	justify-content: space-between;
+	align-items: center;
+}
+.F1{flex: 1;}
+.F2{flex: 2;}
+.F3{flex: 3;}
+.F5{flex: 5;}
+.showcase{	
+	padding: 1.25%;
+}
+
+img{border-radius: 3%;}
+
+
+
