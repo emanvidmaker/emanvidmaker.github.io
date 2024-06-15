@@ -1,0 +1,12 @@
+.content, main{
+    background-color: whitesmoke;
+}
+body{
+    background-color: gray;
+}
+.nav {
+    background-color: lightgray;
+}
+footer{
+    background-color: darkgray;
+}
