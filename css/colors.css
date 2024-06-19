@@ -1,12 +1,33 @@
 .content, main{
-    background-color: whitesmoke;
+    background-color: var(--main);
 }
 body{
-    background-color: gray;
+    background-color:var(--10);
+}
+svg { 
+
+    fill: var(--second);
 }
 .nav {
-    background-color: lightgray;
+    background-color: var(--20);
+    border-bottom: 0.125rem solid var(--75);
 }
 footer{
-    background-color: darkgray;
+    background-color: var(--25);
+    border-top: 0.125rem solid var(--75);
+    svg:hover { fill: var(--gray); scale: 1.6; }
+}
+
+* {
+    color: var(--second);
+    scrollbar-color: var(--75) var(--main);
+} 
+a{
+   color:var(--gray); 
+}
+a:hover{
+   color:var(--75); 
+}
+.logo-text{
+    color: var(--second);
 }

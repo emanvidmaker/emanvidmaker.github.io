@@ -1,0 +1,24 @@
+:root{
+    --black:#c1e8ff ;
+    --gray:#80cdf9 ;
+    --white: #160f22;
+    /* light */
+    --second: #241937  ;
+    /* dark */
+    --main: #3f9ed4;
+    /* #30b2fc; */
+    --80: color-mix(in srgb, var(--second) 80%, var(--main));
+    --75: color-mix(in srgb, var(--second) 75%, var(--main));
+    --66: color-mix(in srgb, var(--second) 66%, var(--main));
+    --50: color-mix(in srgb, var(--second) 50%, var(--main));
+    --33: color-mix(in srgb, var(--second) 33%, var(--main));
+    --25: color-mix(in srgb, var(--second) 25%, var(--main));
+    --20: color-mix(in srgb, var(--second) 20%, var(--main));
+    --10: color-mix(in srgb, var(--second) 10%, var(--main));
+    /*  */
+}
+
+/* 
+brand colors
+cyan (light): #30b2fc
+dark purple (dark): #241937
