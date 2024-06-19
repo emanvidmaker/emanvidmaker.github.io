@@ -43,7 +43,10 @@ padding: 0;
 }
 .nav ul li{
     padding: 0.5rem;
-    
+
+}
+.nav .nav-button {
+    text-transform: uppercase;
 }
 .logo-text{
     text-decoration: none;
