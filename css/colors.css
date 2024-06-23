@@ -1,5 +1,7 @@
 .content, main{
     background-color: var(--main);
+    border: 0.125rem solid var(--second);
+    border-radius: 1.125rem;
 }
 body{
     background-color:var(--10);
@@ -19,17 +21,17 @@ footer{
 } 
 svg { 
 
-    fill: var(--66);
+    fill: var(--second);
 }
 footer svg:hover { fill: var(--gray); scale: 1.6; }
 a{
-   color:var(--66); 
+   color:var(--second); 
 }
 a:hover{
    color:var(--gray); 
 }
 /* a:visited{
-    color:var(--75); 
+    color:var(--66); 
  } */
 .logo-text, .logo-text:visited{
     color: var(--second);

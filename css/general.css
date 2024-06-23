@@ -1,16 +1,36 @@
-
+a {    font-weight: 500;}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    /* text-align: justify; */
+    text-transform: capitalize;
+    margin: 0.25rem auto;
+}
+strong{
+    font-weight: 600;
+}
+.text-center {
+    text-align: center;
+}
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
 html, body {
     padding: 0px;
     height: 100%;
     margin: 0;
 }
 
-.content, main{
+.content{
     display: block;
     margin: 0.5rem auto;
     padding:  min(0.5in,0.5rem);
     width: min(95vw,10in);
-    /* text-align: justify; */
+    p, ul, li {
+        max-width: 30rem;
+        margin: 0 auto;
+        text-align: left;
+    }
 }
 
 .nav {
@@ -30,48 +50,43 @@ html, body {
     width: 100%;
 
     flex-wrap: wrap;
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        padding: 0.5rem;
+        
+    }
+    .nav-button {
+        text-transform: uppercase;
+        text-align: center;
+    }
     .nav-button:hover {
         scale: 1.33;
     }
 }
-.nav ul{
-display: flex;
 
-list-style: none;
-margin: 0;
-padding: 0;
-}
-.nav ul li{
-    padding: 0.5rem;
-
-}
-.nav .nav-button {
-    text-transform: uppercase;
-}
-.logo-text{
-    text-decoration: none;
-}
-.nav-button {
-    text-align: center;
-}
-a {
-    font-weight: bold;
-}
-.logo a {
-    margin-left: 0.25rem;
-    font-size: 2rem;
-}
-.logo svg{
-    min-width: 1rem;
-    min-width: 1rem;
-    max-height: 3rem;
-    max-width: 3rem;
-}
 
 .logo  {
     display: flex;
     flex-direction: row;
     align-items: center;
+    a {
+        margin-left: 0.25rem;
+        font-size: 2rem;
+    }
+    svg{
+        min-width: 1rem;
+        min-height: 1rem;
+        max-height: 3rem;
+        max-width: 3rem;
+    }
+    .logo-text{
+        text-decoration: none;
+    }
 }
 
 footer{
@@ -89,18 +104,18 @@ footer{
         width: 1.614rem;
         margin: 0.25rem 0.25rem;
     }
-}
-footer > * {
-    word-wrap: break-word;
-}
-footer ul{
+    > * {
+        word-wrap: break-word;
+    }
+    ul{
     flex-wrap: wrap;
         display: flex;
         justify-content: space-around;
         list-style: none;
         margin: 0;
         padding: 0;
+        li{
+            padding: 0.5rem;
         }
-footer ul li{
-        padding: 0.5rem;
+    }
 }
