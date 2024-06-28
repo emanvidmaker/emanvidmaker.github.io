@@ -1,4 +1,4 @@
-.content, main{
+.content{
     background-color: var(--main);
     border: 0.125rem solid var(--second);
     border-radius: 1.125rem;
