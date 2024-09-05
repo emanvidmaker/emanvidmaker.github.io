@@ -16,10 +16,10 @@ strong{
     font-weight: 400;
     max-width: 100vw;
 }
-html, body {
+body {
     padding: 0px;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .content{

@@ -1,11 +1,16 @@
 .content{
-    background-color: var(--main);
+    background-color: var(--black);
     border: 0.125rem solid var(--second);
     border-radius: 1.125rem;
 }
 body{
-    background-color:var(--10);
+    background-color:var(--main); /*--10*/
 }
+/* html{
+    background-color:var(--black);
+} */
+
+
 .nav {
     background-color: var(--20);
     border-bottom: 0.125rem solid var(--75);
