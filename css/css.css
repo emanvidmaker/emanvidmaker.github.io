@@ -1,0 +1,135 @@
+:root{
+    --white: light-dark(white, rgb(36, 37, 37));
+    --black: light-dark(black,white);
+    --whitesmoke: light-dark(whitesmoke,black);
+    --lead:  #2fb2fc;
+    --backstage: #241937;
+    --transparent:light-dark(rgba(191, 188, 185, 0.3),rgba(64, 67, 70, 0.3));
+}
+
+
+
+* {    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.blurry{
+    backdrop-filter: blur(10px); 
+    background-color: var(--transparent); 
+}
+a{
+    color:var(--lead);
+    text-decoration: underline;
+    :visited{
+        color:var(--backstage);
+        text-decoration: dashed;
+    }
+}
+nav{
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    margin : 0;
+    font-size: 1.2rem;
+    a{
+        font-weight: bold;
+        text-decoration: none;
+        :visited{
+            text-decoration: none;
+        }
+    }
+    ul{
+        margin: 0 auto;
+        padding: 0 ;
+        max-width: 40rem;
+        display: flex;
+        li{
+            list-style: none;
+            margin-left: 1rem; 
+            margin-right: 0.5rem;
+
+        }
+        li:first-child{
+            margin-left: 0.5rem; 
+            margin-right: auto;
+        }
+    }
+}
+html{    background-color: var(--whitesmoke);    }
+body{
+
+    min-height: 100vh;
+    margin: 0.125rem auto;
+    margin-top: 2.6rem;
+    max-width: 40rem;
+    padding: 0.1rem min(5vw,5rem) ;
+    
+    background-color: var(--white);
+    color: --black;
+    border-radius: 0.5rem;
+    /* border-radius: 13px; */
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+tg-spoiler{
+    border-radius: 0.25rem;
+    color:  var(--black);
+    background-color: var(--black);
+    padding: 0.1rem;
+}
+tg-spoiler:hover{
+    color:  var(--white);
+}
+p{
+    text-indent:2rem;
+}
+h1,h2,h3,h4{
+    margin-bottom: 13px;
+}
+.bnt {
+    text-align: center;
+    border: 2px solid var(--lead);
+    border-radius: 5px;
+    text-decoration: none;
+}
+.bnt:hover{
+    background-color:var(--lead);
+    color:var(--backstage) ;
+    border: 2px solid var(--backstage);
+}
+footer{
+    /* height: 4rem; */
+    width: 100%;
+    /* display: flex; */
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+    ul{
+        display: inline;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li{
+            margin: 13px;
+            padding: auto;
+            display: inline;
+            list-style: none;
+        }
+    }
+    div {
+        display: flex;
+        width: 100%;
+        flex: 1; /* Pushes the footer to the bottom */
+        padding: 5px;
+    }
+    a {
+        margin: auto;
+        text-decoration: none;
+    }
+ 
+    
+}
